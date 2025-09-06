@@ -85,6 +85,32 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Avatar style */
+    .avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid #1E90FF;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Bouton contact */
+    #btn-contact {
+      background-color: #1E90FF;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #btn-contact:hover {
+      background-color: #155fa0;
+    }
   </style>
 </head>
 <body>
@@ -108,7 +134,7 @@
     
     <section id="apropos" class="fade-in" style="text-align: center;">
       <h2>À propos de moi</h2>
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar féminin" style="border-radius: 50%; width: 150px; height: 150px; margin-bottom: 15px;" />
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Avatar conférence Speak" class="avatar" />
       <p>Je m'appelle Rama, passionnée par le développement web. Actuellement en formation, je me spécialise dans le front-end avec HTML, CSS, JavaScript et React. Ce portfolio est un aperçu de mes projets et de mon évolution en tant que développeuse. Mon objectif ? Créer des interfaces modernes, fonctionnelles et accessibles.</p>
     </section>
     
@@ -135,9 +161,10 @@
       </article>
     </section>
     
-    <section id="contact" class="fade-in">
+    <section id="contact" class="fade-in" style="text-align: center;">
       <h2>Contact</h2>
       <p>Vous pouvez me contacter via <a href="mailto:rama@example.com">mon email</a> ou me retrouver sur <a href="#">LinkedIn</a> et <a href="#">GitHub</a>.</p>
+      <button id="btn-contact">Envoyer un message</button>
     </section>
   </main>
   
@@ -167,6 +194,11 @@
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('load', handleScroll);
+
+    // Ajout interaction bouton contact
+    document.getElementById('btn-contact').addEventListener('click', function() {
+      alert('Merci pour votre message ! Je vous répondrai dès que possible.');
+    });
   </script>
 </body>
 </html>
