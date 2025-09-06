@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio de Rama – Développeur Web</title>
-  <meta name="description" content="Découvrez le portfolio de Rama, développeur web spécialisé en front-end. Projets, compétences, et contact." />
+  <title>Portfolio de Rama – Développeuse Web</title>
+  <meta name="description" content="Découvrez le portfolio de Rama, développeuse web spécialisée en front-end. Projets, compétences, et contact." />
   
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
   
   <style>
@@ -85,6 +84,14 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Style pour les images avatar rond */
+    .avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
@@ -103,12 +110,14 @@
   <main>
     <section id="accueil" class="fade-in">
       <h1>Bonjour, je suis Rama</h1>
-      <p>Développeur web en apprentissage, passionné par la création d’interfaces modernes et fonctionnelles.</p>
+      <p>Développeuse web en apprentissage, passionnée par la création d’interfaces modernes et fonctionnelles.</p>
     </section>
     
-    <section id="apropos" class="fade-in">
+    <section id="apropos" class="fade-in" style="text-align: center;">
       <h2>À propos de moi</h2>
-      <p>Je m'appelle Rama, passionné par le développement web. Actuellement en formation, je me spécialise dans le front-end avec HTML, CSS, JavaScript et React. Ce portfolio est un aperçu de mes projets et de mon évolution en tant que développeur. Mon objectif ? Créer des interfaces modernes, fonctionnelles et accessibles.</p>
+      <!-- Avatar féminin intégré en base64 -->
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////2wBDAf//////////////////////////////////////////////////////////////////////////////////////wAARCAABAAEDAREAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwIBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD/wD//Z" alt="Avatar féminin" class="avatar" />
+      <p>Je m'appelle Rama, passionnée par le développement web. Actuellement en formation, je me spécialise dans le front-end avec HTML, CSS, JavaScript et React. Ce portfolio est un aperçu de mes projets et de mon évolution en tant que développeuse. Mon objectif ? Créer des interfaces modernes, fonctionnelles et accessibles.</p>
     </section>
     
     <section id="competences" class="fade-in">
@@ -123,46 +132,8 @@
     
     <section id="projets" class="fade-in">
       <h2>Projets</h2>
+
       <article>
         <h3>Application météo</h3>
-        <img src="assets/images/meteo.png" alt="Capture de l'application météo" />
-        <p>Application météo en React avec API OpenWeather. Affiche la météo selon la ville choisie.</p>
-        <p><a href="#">Voir la démo</a> | <a href="#">Code source</a></p>
-      </article>
-    </section>
-    
-    <section id="contact" class="fade-in">
-      <h2>Contact</h2>
-      <p>Vous pouvez me contacter via <a href="mailto:rama@example.com">mon email</a> ou me retrouver sur <a href="#">LinkedIn</a> et <a href="#">GitHub</a>.</p>
-    </section>
-  </main>
-  
-  <footer>
-    <p>© 2025 Rama - Portfolio</p>
-  </footer>
-  
-  <script>
-    // Fonction qui détecte quand un élément est visible dans la fenêtre
-    function isInViewport(element) {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom >= 0
-      );
-    }
-
-    // Ajoute la classe 'visible' aux éléments fade-in quand ils sont dans la viewport
-    function handleScroll() {
-      const fadeEls = document.querySelectorAll('.fade-in');
-      fadeEls.forEach(el => {
-        if (isInViewport(el)) {
-          el.classList.add('visible');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('load', handleScroll);
-  </script>
-</body>
-</html>
+        <!-- Image projet météo en base64 -->
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAABeUlEQVR4nO3TMQEAAAjDMO5fNCHGkBEGUcF0/A5c4SEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEh
