@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Accueil - Portfolio de Rama</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio de Rama – Développeur Web</title>
+  <meta name="description" content="Découvrez le portfolio de Rama, développeur web spécialisé en front-end. Projets, compétences, et contact." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="skills.html">Compétences</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="welcome">
-            <h1>Bienvenue sur mon portfolio</h1>
-            <p>Je suis Rama, développeur web en apprentissage. Voici mon portfolio personnel.</p>
-        </section>
-
-        <section id="intro">
-            <h2>Présentation</h2>
-            <p>Ce site présente mes compétences, mes projets, ainsi que mes informations de contact.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Rama. Tous droits réservés.</p>
-    </footer>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="accueil" class="fade-in">
+      <h1>Bonjour, je suis Rama</h1>
+      <p>Développeur web en apprentissage, passionné par la création d’interfaces modernes et fonctionnelles.</p>
+    </section>
+    
+    <section id="apropos" class="fade-in">
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle Rama, passionné par le développement web. Actuellement en formation, je me spécialise dans le front-end avec HTML, CSS, JavaScript et React. Ce portfolio est un aperçu de mes projets et de mon évolution en tant que développeur. Mon objectif ? Créer des interfaces modernes, fonctionnelles et accessibles.</p>
+    </section>
+    
+    <section id="competences" class="fade-in">
+      <h2>Compétences</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+    
+    <section id="projets" class="fade-in">
+      <h2>Projets</h2>
+      <article>
+        <h3>Application météo</h3>
+        <img src="assets/images/meteo.png" alt="Capture de l'application météo" />
+        <p>Application météo en React avec API OpenWeather. Affiche la météo selon la ville choisie.</p>
+        <p><a href="#">Voir la démo</a> | <a href="#">Code source</a></p>
+      </article>
+    </section>
+    
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p>Vous pouvez me contacter via <a href="mailto:rama@example.com">mon email</a> ou me retrouver sur <a href="#">LinkedIn</a> et <a href="#">GitHub</a>.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 Rama - Portfolio</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
